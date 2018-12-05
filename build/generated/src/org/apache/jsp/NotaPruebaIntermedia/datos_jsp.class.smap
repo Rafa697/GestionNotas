@@ -1,0 +1,18 @@
+SMAP
+datos_jsp.java
+JSP
+*S JSP
+*F
++ 0 datos.jsp
+NotaPruebaIntermedia/datos.jsp
+*L
+5,29:44
+34:73,3
+35:76
+36,4:77,3
+40,2:89
+42,2:91,3
+44,7:97
+51:104,3
+52,4:107
+*E
