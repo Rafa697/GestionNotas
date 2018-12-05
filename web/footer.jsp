@@ -10,10 +10,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<footer class="site-footer js-footer" >
+<footer class="footer   bg-dark" >
     <div class="site-footer container">
-            <div class="copyright text-center my-2">
-                <span class="text-muted">Gestion de Notas © Programacion IV</span>
+            <div class="copyright text-center">
+                <span class="text-white">Gestion de Notas © Programacion IV</span>
             </div>
           </div>
        

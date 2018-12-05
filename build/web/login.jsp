@@ -4,7 +4,7 @@
     Author     : Rafita Jr
 --%>
 
-<%@page import="dao.PersonasDao"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page  session="true" %>
 <!DOCTYPE html>
@@ -38,7 +38,7 @@
                 
                 <button type="submit" class="btn btn-primary"  id="botonLogin" value="" name="btnEnviar">Enviar</button>
             </form>
-           
+          
         </div>
 
 

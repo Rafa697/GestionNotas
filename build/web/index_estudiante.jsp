@@ -4,7 +4,7 @@
     Author     : Alumno 08
 --%>
 <jsp:include page="header.jsp"/>
-
+<%@page  session="true" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 

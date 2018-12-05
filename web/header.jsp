@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" type="image/png" href="img/gn.png" />
         <link rel="icon" type="image/png" href="../img/gn.png" />
+        <link rel="icon" type="image/png" href="../../img/gn.png" />
     </head>
     <body>
         
@@ -34,11 +35,11 @@
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark">
-            <a style="color: white"class="navbar-toggler" href="#" ><span class="navbar-toggler-icon"></span>Home</a>
+            <a style="color: white"class="navbar" href="#" ><span class="navbar"></span>Home</a>
             <div class="dropdown">
                 <a style="color: white" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cerrar Sesion</a>
                 <div class="dropdown-menu text-center">
-                    <a><img src="img/user.png" height="80" width="80"></a><br>
+                   
                     <a>
                         <%
                         HttpSession sesion = request.getSession();
@@ -46,12 +47,15 @@
                         if(sesion.getAttribute("txtcorreo")!=null){
                         usuario =sesion.getAttribute("txtcorreo").toString();
                         out.print(usuario);
-                        
                         }
-                        %>
+                        
+                          %>
                     </a>
                     <div class="dropdown-divider"></div>
                     <a href="login.jsp" class="dropdown-item" >Salir</a>
+                  
+                 
+                   
                 </div>
             </div>
         </nav> 

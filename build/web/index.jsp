@@ -3,7 +3,7 @@
     Created on : 11-12-2018, 09:35:56 AM
     Author     : Alumno 08
 --%>
-
+<%@page  session="true" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page  session="true" %>
 <!DOCTYPE html>

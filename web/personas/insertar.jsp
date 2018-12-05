@@ -10,15 +10,15 @@
 
 <title>Inicio</title>
    
-        <div class="container">
+        <div class="container"> <h1> Datos de Personas</h1>
              <div class="row">
-                 <div class="col-lg-4">
+                 <div class="col-2">
                      
                  </div>
-                 <div class="col-4">
+                 <div class="col-4">  
+                    
                      <form action="../personas?action=insertar" method="POST" >
-                         <h1> Datos de Personas</h1>
-            <label for="nombre">ID</label>
+                      <label for="nombre">ID</label>
             <input class="form-control " name="id_persona" required="">
             <label for="nombre">Nombre</label>
             <input class="form-control " name="nombre" required="">
@@ -28,6 +28,9 @@
             <input class="form-control " name="dui" required="">
             <label for="nombre">NIT</label>
             <input class="form-control " name="nit" required="">
+                 </div>
+                 <div class="col-4">
+                     
             <label for="nombre">Direccion</label>
             <input class="form-control " name="direccion" required="">
             <label for="nombre">Telefono</label>
@@ -41,21 +44,18 @@
                 <option value="3">Estudiante&nbsp;-&nbsp;3</option>
 
             </select>
-                
-              
-
-            <br>
-            <button class="form-control btn badge-light btn-dark" >Enviar</button>
-                     </form>
-                     ${msg}
-                     <br>
-                     <br>
-                     <center> <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a> </center>
-        </div>
+         </div>
                      
+                  
                     
-                    
-             </div>
+             </div>  <br>
+                     <button class="form-control btn badge-light btn-dark" >Enviar</button>
+                     </form>
+                       ${msg}
+                     <br>
+                     <br>
+                      <center> <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a> </center>
+     
         </div>
 <jsp:include page="../footer.jsp"/>
 

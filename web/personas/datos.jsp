@@ -14,7 +14,7 @@
     
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-8">
             <form action="personas?action=insertar" method="POST" > 
                     <h1>Personas </h1>
                     <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a>
@@ -22,7 +22,7 @@
                     
                     </br>
                     </br>
-        <table class="table table-bordered table-hover ">
+        <table class="table table-bordered table-dark ">
             <thead>
                 <tr>
                     <th>ID</th>

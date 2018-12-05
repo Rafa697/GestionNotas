@@ -2,35 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/Gestion_notas-master/web/catedratico/modificar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/controlador/NotaPruebaIntermediaServlet.java</file>
-            <file>file:/D:/Gestion_notas-master/web/header.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/NotaParcial/modificar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/controlador/CoordinadorServlet.java</file>
-            <file>file:/D:/Gestion_notas-master/src/java/dao/CoordinadorDao.java</file>
-            <file>file:/D:/Gestion_notas-master/src/java/dao/PersonasDao.java</file>
-            <file>file:/D:/Gestion_notas-master/web/index_estudiante.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/alumno/NotaPruebaIntermedia/datos.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/dao/VistaDao.java</file>
-            <file>file:/D:/Gestion_notas-master/src/java/controlador/VistaServlet.java</file>
-            <file>file:/D:/Gestion_notas-master/web/Coordinador/datos.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/controlador/AlumnoServlet.java</file>
-            <file>file:/D:/Gestion_notas-master/web/validarusuario.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/modelo/CoordinadorBean.java</file>
-            <file>file:/D:/Gestion_notas-master/web/NotaPruebaIntermedia/datos.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/Coordinador/modificar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/index.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/NotaParcial/datos.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/alumno/insertar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/modelo/VistaBean.java</file>
-            <file>file:/D:/Gestion_notas-master/src/java/controlador/PersonasServlet.java</file>
-            <file>file:/D:/Gestion_notas-master/src/java/dao/Conexion.java</file>
-            <file>file:/D:/Gestion_notas-master/web/NotaParcial/insertar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/login.jsp</file>
-            <file>file:/D:/Gestion_notas-master/src/java/dao/CarreraDao.java</file>
-            <file>file:/D:/Gestion_notas-master/web/Coordinador/insertar.jsp</file>
-            <file>file:/D:/Gestion_notas-master/web/vista/datos.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

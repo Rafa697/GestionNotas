@@ -62,7 +62,7 @@
                     ${msg}
                     <br>
                     <br>
-                    <center> <a class="btn btn-dark btn-light" href="index.jsp" >↩ Volver a inicio</a> </center>
+                    <center> <a class="btn btn-dark btn-light" href="../index.jsp" >↩ Volver a inicio</a> </center>
                 </div>
 
 

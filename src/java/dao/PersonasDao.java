@@ -23,18 +23,15 @@ public class PersonasDao {
     }
 
    
-//        public int login(String usuario, String contra){
+//        public int login(String usuario, String clave){
 //        Conexion conn = null;
 //        int nivel=0;
-//       String sql ="select * from tbl_personas where correo=? and id_persona=? ";
+//       String sql ="select id_rol from tbl_personas where correo='"+ usuario+"' and id_persona='"+ clave+"' ";
 //            try {
 //                PreparedStatement ps = conn.conectar().prepareStatement(sql);
-//                ps.setString(1, usuario);
-//                ps.setString(2, contra);
-//                ResultSet rs = ps.executeQuery();
-//                PersonasBean perb;
+//               ResultSet rs = ps.executeQuery();
 //                while (rs.next()) {                    
-//                   perb.s
+//                  nivel = rs.getInt(1);
 //                }
 //            } catch (Exception e) {
 //            }

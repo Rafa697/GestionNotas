@@ -42,15 +42,7 @@
     }catch(Exception e){
         e.printStackTrace();
     }
-    
-  
-   
-   try {
-           if(request.getParameter("cerrar")!=null){
-           sesion.invalidate();
-           }
-       } catch (Exception e) {
-       }
+      
     
     
     
