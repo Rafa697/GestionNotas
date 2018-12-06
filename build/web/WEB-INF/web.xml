@@ -55,6 +55,10 @@
         <servlet-name>VistaServlet</servlet-name>
         <servlet-class>controlador.VistaServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ColeccionServlet</servlet-name>
+        <servlet-class>controlador.ColeccionServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RolServlet</servlet-name>
         <url-pattern>/rol</url-pattern>
@@ -106,6 +110,10 @@
     <servlet-mapping>
         <servlet-name>VistaServlet</servlet-name>
         <url-pattern>/vista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ColeccionServlet</servlet-name>
+        <url-pattern>/coleccion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
