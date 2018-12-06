@@ -18,16 +18,16 @@
                     <form action="../notaPI?action=insertar" method="POST" >
                         <h1> Notas Pruebas Intermedias</h1>
                         <label for="nombre">Id_pi</label>
-                       <select name="id_pi">
+                        <select name="id_pi" class="form-control">
             <%
             Conexion cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_pi from tbl_pi";
+                    String sql="select * from tbl_pi";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(1)+" - "+cn.rs.getString(2)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());
@@ -35,16 +35,16 @@
             %>
                         </select><br>
                         <label for="nombre">Id_coleccion</label>
-                        <select name="id_coleccion">
+                        <select name="id_coleccion" class="form-control">
             <%
              cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select * from tbl_coleccion";
+                    String sql="select id_coleccion, tp.nombre, tp.apellido from tbl_coleccion tc inner join tbl_alumnos ta on ta.id_alumno=tc.id_alumno inner join tbl_personas tp on tp.id_persona=ta.id_persona";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(1)+" - "+cn.rs.getString(2)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());

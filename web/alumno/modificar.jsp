@@ -22,34 +22,34 @@
                         <label for="label">ID Catedratico</label>
                         <input class="form-control" type="text" name="id_alumno" value="${ver.id_alumno}" readonly="" >
                         <label for="label">ID Persona</label>
-                        <select name="id_persona" >
+                       <select name="id_persona" class="form-control">
             <%
             Conexion cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_persona from tbl_personas where id_rol=3";
+                    String sql="select * from tbl_personas where id_rol=3";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+"  "+cn.rs.getString(3)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());
                 }
             %>
-                        </select><br>
+             </select><br>
                         
                         <label for="label">ID Carrera</label>
-                       <select name="id_carrera">
+                         <select name="id_carrera" class="form-control">
             <%
              cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_carrera from tbl_carrera";
+                    String sql="select * from tbl_carrera";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());
@@ -60,7 +60,7 @@
                     
                        <br>
                     <button class="btn btn-success btn-flat" >Enviar</button>            
-                    <a href="materia?action=consultar" class="btn badge-danger">Cancelar</a>
+                    <a href="alumno?action=consultar" class="btn badge-danger">Cancelar</a>
                     ${msj}
              </form>
                </div>

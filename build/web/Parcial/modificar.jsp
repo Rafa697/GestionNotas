@@ -20,6 +20,8 @@
                             <input class="form-control" type="text" name="id_parcial" value="${ver.id_parcial}" readonly="">
                             <label for="label">Nombre</label>
                             <input class="form-control" type="text" name="nombre" value="${ver.nombre}">
+                            <label for="label">Porcentaje</label>
+                            <input class="form-control" type="text" name="porcentaje" value="${ver.porcentaje}">
                         </c:forEach>
                         <br>
                         <button class="btn btn-success btn-flat" >Enviar</button>            

@@ -52,9 +52,11 @@ public class PruebaIntermediaServlet extends HttpServlet {
             throws ServletException, IOException {
         String id_pi = request.getParameter("id_pi");
         String nombre = request.getParameter("nombre");
+        Double porcentaje = Double.parseDouble(request.getParameter("porcentaje"));
         PruebaIntermediaBean prib = new PruebaIntermediaBean();
         prib.setId_pi(id_pi);
         prib.setNombre(nombre);
+        prib.setPorcentaje(porcentaje);
         Conexion conn = new Conexion();
         PruebaIntermediaDao prid = new PruebaIntermediaDao(conn);
         boolean res = prid.insertar(prib);
@@ -131,8 +133,10 @@ public class PruebaIntermediaServlet extends HttpServlet {
             throws ServletException, IOException {
         String id_pi = request.getParameter("id_pi");
         String nombre = request.getParameter("nombre");
+        Double porcentaje = Double.parseDouble(request.getParameter("porcentaje"));
         PruebaIntermediaBean prib = new PruebaIntermediaBean();
         prib.setNombre(nombre);
+        prib.setPorcentaje(porcentaje);
         prib.setId_pi(id_pi);
         Conexion conn = new Conexion();
         PruebaIntermediaDao prid = new PruebaIntermediaDao(conn);

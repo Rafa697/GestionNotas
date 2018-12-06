@@ -21,11 +21,12 @@ public class PruebaIntermediaDao {
     }
 
     public boolean insertar(PruebaIntermediaBean prib) {
-        String sql = "INSERT INTO tbl_pi VALUES(?,?)";
+        String sql = "INSERT INTO tbl_pi VALUES(?,?,?)";
         try {
             PreparedStatement ps = conn.conectar().prepareStatement(sql);
             ps.setString(1, prib.getId_pi());
             ps.setString(2, prib.getNombre());
+            ps.setDouble(3, prib.getPorcentaje());
             ps.executeUpdate();
             return true;
 
@@ -46,6 +47,7 @@ public class PruebaIntermediaDao {
             while (rs.next()) {
                 prib = new PruebaIntermediaBean(rs.getString("id_pi"));
                 prib.setNombre(rs.getString("nombre"));
+                prib.setPorcentaje(rs.getDouble("porcentaje"));
                 lista.add(prib);
             }
             return lista;
@@ -57,12 +59,14 @@ public class PruebaIntermediaDao {
     }
 
     public boolean actualizar(PruebaIntermediaBean prib) {
-        String sql = "UPDATE tbl_pi SET nombre =? WHERE id_pi=?";
+        String sql = "UPDATE tbl_pi SET nombre =?, porcentaje=? WHERE id_pi=?";
         try {
             PreparedStatement ps = conn.conectar().prepareStatement(sql);
 
             ps.setString(1, prib.getNombre());
-            ps.setString(2, prib.getId_pi());
+            ps.setDouble(2, prib.getPorcentaje()); 
+            ps.setString(3, prib.getId_pi());
+           
             ps.executeUpdate();
             return true;
         } catch (Exception e) {
@@ -96,6 +100,7 @@ public class PruebaIntermediaDao {
             while (rs.next()) {
                 prib = new PruebaIntermediaBean(rs.getString("id_pi"));
                 prib.setNombre(rs.getString("nombre"));
+                prib.setPorcentaje(rs.getDouble("porcentaje"));
                 listar.add(prib);
             }
             return listar;

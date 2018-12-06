@@ -4,6 +4,7 @@ public class ParcialBean {
 
     private String id_parcial;
     private String nombre;
+    private double porcentaje;
     
     public ParcialBean(String id_parcial) {
         this.id_parcial = id_parcial;
@@ -27,6 +28,14 @@ public class ParcialBean {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public double getPorcentaje() {
+        return porcentaje;
+    }
+
+    public void setPorcentaje(double porcentaje) {
+        this.porcentaje = porcentaje;
     }
     
 }

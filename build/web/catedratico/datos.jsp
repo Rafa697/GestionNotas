@@ -8,11 +8,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <jsp:include page="../header.jsp"/>
-        <title>Materias</title>
+        <title>Catedraticos</title>
    
         <div class="container">
             <form action="catedratico?action=insertar" method="POST"> 
-                    <h1>Materias </h1>
+                    <h1>Catedraticos </h1>
                     <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a>
                     <a class="btn btn-success " href="catedratico/insertar.jsp">➕ Nuevo</a>
                     

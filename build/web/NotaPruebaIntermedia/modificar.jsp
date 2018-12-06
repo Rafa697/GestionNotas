@@ -15,8 +15,10 @@
                 <div class="col-4">
                     <form action="notaPI?action=actualizar" method="POST"  >
                         <c:forEach items="${listar}" var="ver">
+                            <label for="label">ID Nota PI</label>
+                            <input class="form-control" type="text" name="id_notapi" value="${ver.id_notapi}" readonly="">
                             <label for="label">ID_PI</label>
-                            <input class="form-control" type="text" name="id_pi" value="${ver.id_pi}" readonly="">
+                            <input class="form-control" type="text" name="id_pi" value="${ver.id_pi}" >
                             <label for="label">ID_COLECCION</label>
                             <input class="form-control" type="text" name="id_coleccion" value="${ver.id_coleccion}">
                             <label for="label">NOTA</label>

@@ -3,6 +3,7 @@
     Created on : 10-16-2018, 07:23:10 PM
     Author     : Alumno 08
 --%>
+<%@page import="dao.Conexion"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -36,14 +37,24 @@
             <label for="nombre">Telefono</label>
             <input class="form-control " name="telefono" required="">
             <label for="nombre">Correo</label>
-            <input class="form-control " name="correo" required="">
+            <input class="form-control " name="correo" required="" type="email">
             <label for="nombre">Rol</label>
-            <select name="id_rol" class="form-control">
-                <option value="1" >Administrador&nbsp;-&nbsp;1</option>
-                <option value="2">Catedratico&nbsp;-&nbsp;2</option>
-                <option value="3">Estudiante&nbsp;-&nbsp;3</option>
-
-            </select>
+             <select name="id_pi" class="form-control">
+            <%
+            Conexion cn = new Conexion();
+            try {
+                    cn.conectar();
+                    String sql="select * from tbl_rol";
+                    cn.st=cn.conn.createStatement();
+                    cn.rs=cn.st.executeQuery(sql);
+                    while(cn.rs.next()){
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+" - "+cn.rs.getString(1)+"</option>");
+                    }
+                } catch (Exception e) {
+                    out.print(e.toString());
+                }
+            %>
+                        </select><br>
          </div>
                      
                   

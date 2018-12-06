@@ -8,7 +8,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <jsp:include page="../header.jsp"/> 
-<title>Modificar roles</title>
+<title>Modificar Ciclo  </title>
     </head>
     <body>
         <div class="container">

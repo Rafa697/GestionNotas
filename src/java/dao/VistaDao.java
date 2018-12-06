@@ -18,9 +18,9 @@ public class VistaDao {
     }
     
     public List<VistaBean> consultar(){
-    String sql = "SELECT * FROM notas where coleccion = 1";
+    String sql = "SELECT * FROM notas";
         try {
-            PreparedStatement ps = conn.conectar().prepareStatement(sql);
+            PreparedStatement ps = conn.conectar().prepareCall(sql);
             ResultSet rs = ps.executeQuery();
             VistaBean visb;
             List<VistaBean> lista = new  LinkedList();

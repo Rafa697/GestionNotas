@@ -10,7 +10,7 @@
 <jsp:include page="../header.jsp"/>
 
         <div class="container">
-            <form action="vista?action=consultar" method="POST"> 
+           
                     <h1>Roles </h1>
                     <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a>
                     
@@ -45,7 +45,7 @@
                 </c:forEach>
             </tbody>
                     </table>
-                    </form>
+                    
                     
             
       

@@ -20,6 +20,8 @@
                         <input class="form-control" name="id_pi" required="">
                         <label for="nombre">Nombre</label>
                         <input class="form-control" name="nombre" required="">
+                        <label for="nombre">Porcentaje</label>
+                        <input class="form-control" name="porcentaje" required="">
                         <br>
                         <button class="form-control btn badge-light btn-dark" >Enviar</button>
                     </form>

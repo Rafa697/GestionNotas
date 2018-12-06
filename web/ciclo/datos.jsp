@@ -8,11 +8,11 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <jsp:include page="../header.jsp"/>
-        <title>Datos roles</title>
+        <title>Ciclos</title>
     
         <div class="container">
             <form action="ciclo?action=insertar" method="POST"> 
-                    <h1>Roles </h1>
+                    <h1>Ciclos </h1>
                     <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a>
                     <a class="btn btn-success " href="ciclo/insertar.jsp">➕ Nuevo</a>
                     

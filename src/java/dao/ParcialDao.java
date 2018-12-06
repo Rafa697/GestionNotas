@@ -22,11 +22,12 @@ public class ParcialDao {
     }
 
     public boolean insertar(ParcialBean parb) {
-        String sql = "INSERT INTO tbl_parcial VALUES(?,?)";
+        String sql = "INSERT INTO tbl_parcial VALUES(?,?,?)";
         try {
             PreparedStatement ps = conn.conectar().prepareStatement(sql);
             ps.setString(1, parb.getId_parcial());
             ps.setString(2, parb.getNombre());
+            ps.setDouble(3, parb.getPorcentaje());
             ps.executeUpdate();
             return true;
 
@@ -47,6 +48,7 @@ public class ParcialDao {
             while (rs.next()) {
                 parb = new ParcialBean(rs.getString("id_parcial"));
                 parb.setNombre(rs.getString("nombre"));
+                parb.setPorcentaje(rs.getDouble("porcentaje"));
                 lista.add(parb);
             }
             return lista;
@@ -58,12 +60,13 @@ public class ParcialDao {
     }
 
     public boolean actualizar(ParcialBean parb) {
-        String sql = "UPDATE tbl_parcial SET nombre =? WHERE id_parcial=?";
+        String sql = "UPDATE tbl_parcial SET nombre =?, porcentaje=? WHERE id_parcial=?";
         try {
             PreparedStatement ps = conn.conectar().prepareStatement(sql);
 
             ps.setString(1, parb.getNombre());
-            ps.setString(2, parb.getId_parcial());
+            ps.setDouble(2, parb.getPorcentaje());
+            ps.setString(3, parb.getId_parcial());
             ps.executeUpdate();
             return true;
         } catch (Exception e) {
@@ -97,6 +100,7 @@ public class ParcialDao {
             while (rs.next()) {
                 parb = new ParcialBean(rs.getString("id_parcial"));
                 parb.setNombre(rs.getString("nombre"));
+                parb.setPorcentaje(rs.getDouble("porcentaje"));
                 listar.add(parb);
             }
             return listar;

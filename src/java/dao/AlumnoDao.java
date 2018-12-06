@@ -7,8 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 import modelo.AlumnoBean;
 
@@ -23,13 +22,7 @@ public class AlumnoDao {
     public AlumnoDao() {
     }
 
-   
-
-   
-
-    
-
-    
+ 
     public boolean insertar(AlumnoBean alub){
     String sql ="INSERT INTO tbl_alumnos VALUES(?,?,?)";
     try{

@@ -9,11 +9,11 @@
 <!DOCTYPE html>
 
       <jsp:include page="../header.jsp"/>  
-        <title>Materias</title>
+        <title>Alumnos</title>
    
         <div class="container">
             <form action="alumno?action=insertar" method="POST"> 
-                    <h1>Materias </h1>
+                    <h1>Alumnos </h1>
                     <a class="btn btn-dark btn-light" href="/Gestion_notas/index.jsp" >↩ Volver a inicio</a>
                     <a class="btn btn-success " href="alumno/insertar.jsp">➕ Nuevo</a>
                     

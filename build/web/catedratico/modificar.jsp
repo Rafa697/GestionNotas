@@ -21,23 +21,23 @@
                     
                         <label for="label">ID Catedratico</label>
                         <input class="form-control" type="text" name="id_catedratico" value="${ver.id_catedratico}" readonly="" >
-                        <label for="label">Materia</label>
-                        <select name="id_persona" class="form-control">
+                        <label for="label">ID PERSONA</label>
+                       <select name="id_persona" class="form-control">
             <%
             Conexion cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_persona from tbl_personas where id_rol=2";
+                    String sql="select * from tbl_personas where id_rol=2";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+"  "+cn.rs.getString(3)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());
                 }
             %>
-                        </select><br>
+             </select><br>
                         
                         <label for="label">Titulo</label>
                         <input class="form-control" type="text" name="titulo" value="${ver.titulo}">
@@ -45,7 +45,7 @@
                     
                        <br>
                     <button class="btn btn-success btn-flat" >Enviar</button>            
-                    <a href="materia?action=consultar" class="btn badge-danger">Cancelar</a>
+                    <a href="catedratico?action=consultar" class="btn badge-danger">Cancelar</a>
                     ${msj}
              </form>
                </div>

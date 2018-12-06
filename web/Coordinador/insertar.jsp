@@ -26,11 +26,11 @@
             Conexion cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_persona from tbl_personas where id_rol=1";
+                    String sql="select * from tbl_personas where id_rol=4";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+"  "+cn.rs.getString(3)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());
@@ -43,11 +43,11 @@
              cn = new Conexion();
             try {
                     cn.conectar();
-                    String sql="select id_carrera from tbl_carrera";
+                    String sql="select * from tbl_carrera";
                     cn.st=cn.conn.createStatement();
                     cn.rs=cn.st.executeQuery(sql);
                     while(cn.rs.next()){
-                    out.println("<option>"+cn.rs.getString(1)+"</option>");
+                    out.println("<option value="+cn.rs.getString(1)+">"+cn.rs.getString(2)+"</option>");
                     }
                 } catch (Exception e) {
                     out.print(e.toString());

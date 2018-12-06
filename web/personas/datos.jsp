@@ -22,7 +22,7 @@
                     
                     </br>
                     </br>
-        <table class="table table-bordered table-dark ">
+        <table class="table table-bordered table-dark" >
             <thead>
                 <tr>
                     <th>ID</th>

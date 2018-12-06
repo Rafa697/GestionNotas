@@ -54,9 +54,11 @@ public class ParcialServlet extends HttpServlet {
             throws ServletException, IOException {
         String id_parcial = request.getParameter("id_parcial");
         String nombre = request.getParameter("nombre");
+        Double porcentaje = Double.parseDouble(request.getParameter("pocentaje"));
         ParcialBean parb = new ParcialBean();
         parb.setId_parcial(id_parcial);
         parb.setNombre(nombre);
+        parb.setPorcentaje(porcentaje);
         Conexion conn = new Conexion();
         ParcialDao pard = new ParcialDao(conn);
         boolean res = pard.insertar(parb);
@@ -136,8 +138,10 @@ public class ParcialServlet extends HttpServlet {
             throws ServletException, IOException {
         String id_parcial = request.getParameter("id_parcial");
         String nombre = request.getParameter("nombre");
+        Double porcentaje = Double.parseDouble(request.getParameter("porcentaje"));
         ParcialBean parb = new ParcialBean();
         parb.setNombre(nombre);
+        parb.setPorcentaje(porcentaje);
         parb.setId_parcial(id_parcial);
         Conexion conn = new Conexion();
         ParcialDao pard = new ParcialDao(conn);

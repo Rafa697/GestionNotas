@@ -17,7 +17,7 @@
             "root", "root");
     Statement st = con.createStatement();
     ResultSet rs;
-    rs = st.executeQuery("select * from tbl_personas where correo='" + usuario + "' and id_persona='" + clave + "' and id_rol=1");
+    rs = st.executeQuery("select * from tbl_personas where correo='" + usuario + "' and id_persona='" + clave + "' and id_rol=1 or id_rol=4");
     if (rs.next()) {
         session.setAttribute("txtcorreo", usuario);
          response.sendRedirect("index.jsp");

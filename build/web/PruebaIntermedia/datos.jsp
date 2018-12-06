@@ -22,6 +22,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
+                            <th>Porcentaje</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -30,6 +31,7 @@
                             <tr>
                                 <td>${ver.id_pi}</td>
                                 <td>${ver.nombre}</td>
+                                <td>${ver.porcentaje}</td>
                                 <td>
                         <center>
                             <a class="btn btn-success " href="pruebaIntermedia?action=consultarById&id_pi=${ver.id_pi}" >✎ Editar</a>

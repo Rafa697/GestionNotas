@@ -15,7 +15,7 @@
                  </div>
                  <div class="col-4">
                      <form action="../ciclo?action=insertar" method="POST">
-                         <h1> Roles De Sistema</h1>
+                         <h1> Ciclos</h1>
             <label for="nombre">ID Ciclo</label>
             <input class="form-control " name="id_ciclo" required="">
             <label for="nombre">Ciclo</label>
